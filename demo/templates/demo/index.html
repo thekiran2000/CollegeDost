@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 17px;
+        }
+        /* body{
+            background-image: linear-gradient(#a9f2ff,#EEC0C6);
+        } */
+        
+        
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-family: fantasy;letter-spacing: 1px;font-size: 22px;">CollegeDOST</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/demo/contact" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 20px;">
+                            Navigate
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#iit">IIT cutoffs for 1st round</a></li>
+                            <li><a class="dropdown-item" href="#nit">NIT cutoffs for 1st round</a></li>
+                            <li><a class="dropdown-item" href="#iiit">IIIT cutoffs for 1st round</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+      
+                    <a href="/logout" id="rko"  class="btn btn-outline-success my-2 my-sm-0 mx-2" style=" background-image: linear-gradient(#fa709a,#fee140
+                    ); font-size: 17px; font-weight: bold; " >Logout</a>
+                    <a class="navbar-brand" href="/demo/" style="font-family: cursive;">Welcome {{request.user}}</a>
+                    
+                    
+                </form>
+               
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron" style="padding: 90px; background-image: linear-gradient(#80FF72,#7EE8FA
+    );">
+        <div class="container">
+            <h1 style="font-family: cursive; text-align: center;" class="display-3">Welcome to CollegeDOST!</h1>
+            <p style="font-family:Georgia, 'Times New Roman', Times, serif; text-align: center; font-size: 18px;">
+                <b></b><br>
+
+               Easy to get information of college based on your entrance examination rank.<br>
+               Just enter your basic details and see the status and for which college you are applicable.<br>
+               JEE(JOINT ENTRANCE EXAMINATION) Advanced,JEE Mains Ranks are considered.<br>
+               All trusted colleges across india are considered.<br>
+
+            </p>
+            <p><a class="btn btn-warning btn-lg" href="/demo/" role="button" style=" background-image: linear-gradient(#fa709a,#fee140);">Learn more &raquo;</a></p>
+        </div>
+    </div>
+    <!-- jumbotron end -->
+
+    <div class="container">
+        <div class="row mb-1">
+            <div class="col-md-12" id="iit" >
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-260 position-relative" style="box-shadow: 0 8px 160px 0 rgba(0,0,0,0.2);">
+                    <div class="col p-4 d-flex flex-column position-static" >
+                        
+                        <h2 class="mb-0">Indian Institute Of Technology(IITs)</h3>
+                            <div class="mb-1 text-muted">IITs</div>
+
+                            <p class="card-text mb-auto">The Indian Institutes of Technology (IITs) across India offer various programmes at the undergraduate (UG), postgraduate (PG) and doctorate (PhD) level, majorly in the streams of Science, Engineering and Technology.</p>
+                
+
+                        <div class="tp" style="display: flex;align-items: center;justify-content: center;">
+                            <p><a class="btn btn-info btn-lg" href="/demo/iit/" role="button" style="width: 220px; background-image: linear-gradient(#80FF72,#7EE8FA);" >Check status
+                                    &raquo;</a></p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://qph.fs.quoracdn.net/main-qimg-2f77f788f5dd67e52133595d1153522b.webp"
+                            height="300px" width="300px" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12" id="nit">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://www.nitt.edu/home/about/High-Resolution-Emblem.png" height="300px"
+                            width="300px" alt="">
+
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+                        
+                        <h2 class="mb-0">National Institute Of Technology(NITs)</h3>
+                            <div class="mb-1 text-muted">NITs</div>
+
+                            <p class="card-text mb-auto">National Institute of Technology (NITs) are premier engineering
+                                colleges in India offering admission to degree courses at both undergraduate and
+                                postgraduate level. Check here the list of top NITs with their MHRD-NIRF rankings, courses
+                                offered, total seat intake and cut offs</p>
+                    
+                                <div class="tp" style="display: flex;align-items: center;justify-content: center;">
+                                    <p><a class="btn btn-info btn-lg" href="/demo/nit/" role="button" style="width: 220px; background-image: linear-gradient(#7EE8FA,#80FF72);" >Check status
+                                            &raquo;</a></p>
+                                </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12" id="iiit">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                       
+                        <h2 class="mb-0">Indian Institutes of Information Technology (IIITs)</h3>
+                        <div class="mb-1 text-muted">IIITs</div>
+
+                        <p class="card-text mb-auto">Indian Institutes of Information Technology (IIITs) are a group of institutes of higher education in India, focused on information technology. Five of them are established, funded and managed by the Ministry of Human Resource Development. The rest are set up on the public-private partnership (PPP) model.</p>
+                        <div class="tp" style="display: flex;align-items: center;justify-content: center;">
+                            <p><a class="btn btn-info btn-lg" href="/demo/iiit/" role="button" style="width: 220px; background-image: linear-gradient(#80FF72,#7EE8FA);" >Check status
+                                    &raquo;</a></p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://img.collegepravesh.com/2017/06/IIIT-Naya-Raipur-Logo.png" height="300px"
+                            width="300px" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12" id="jee">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://www.adarshbarnwal.com/wp-content/uploads/2019/11/jee_mainslogo.jpg" height="300px"
+                            width="300px" alt="">
+
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+                        
+                        <h2 class="mb-0">All Maharastras colleges based on JEE</h3>
+                            <div class="mb-1 text-muted">NITs</div>
+
+                            <p class="card-text mb-auto">National Institute of Technology (NITs) are premier engineering
+                                colleges in India offering admission to degree courses at both undergraduate and
+                                postgraduate level. Check here the list of top NITs with their MHRD-NIRF rankings, courses
+                                offered, total seat intake and cut offs</p>
+                    
+                                <div class="tp" style="display: flex;align-items: center;justify-content: center;">
+                                    <p><a class="btn btn-info btn-lg" href="/demo/jee/" role="button" style="width: 220px; background-image: linear-gradient(#7EE8FA,#80FF72);" >Check status
+                                            &raquo;</a></p>
+                                </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-muted py-5">
+        <div class="container">
+          <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+          </p>
+          <p class="mb-1">Album example is &copy; CollegeDOST, but please download and customize it for yourself!</p>
+          <p class="mb-0">New to CollegeDOST? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+      </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
